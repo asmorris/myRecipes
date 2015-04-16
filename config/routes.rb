@@ -12,7 +12,16 @@ Rails.application.routes.draw do
   # get '/recipes/:id', to: 'recipes#show', as: 'recipe'
   # delete '/recipes/:id', to: 'recipes#destroy'
   
-  resources :recipes #does all that is above here.
+  #This does all of the routes above. FYI
+  resources :recipes do
+    member do
+      post 'like'
+    end
+  end
+  
+
+  
+  
   
   
 end
