@@ -14,3 +14,19 @@ description must be present
 description must be between 20 characters and 500 characters
 
 chef_id must be present
+
+Chefs:
+
+What we have already:
+-Chef model and validations
+-chefs table with cols chefname and email
+
+What we need to do:
+-Add passwords to the chefs table so chefs can be auth. and logged in
+-use email as login cred. since email is unique
+-ability to register new chefs within app
+-ability to display chefs profile
+-ability to list chefs using app
+-ability for chefs to log in and log out of app
+-restrict actions like create recipe and like feature to logged in chefs only
+-restricting editing of recipes to chefs who created recipe
